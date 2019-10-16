@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/meta#Zeichencodierung
+        Note: Should be at the very top of the head
+        -->
+        <meta charset="utf-8"/>
+
+        <!--
+        Space for comments, information, human readables
+        -->
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/meta#Viewport_einstellen
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/meta#theme-color
+        -->
+        <meta name="theme-color" content="#ff0000">
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/title
+        -->
+        <title>Default Title</title>
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/meta#Metadaten_f.C3.BCr_Suchmaschinen
+        -->
+        <meta name="description" content="Some meta description text.">
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/meta#Stichw.C3.B6rter
+        -->
+        <meta name="keywords" lang="de" content="Haus, Garten, Sonne">
+        <meta name="keywords" lang="en-us" content="house, garden, sun">
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/link#Favicon_angeben
+        https://wiki.selfhtml.org/wiki/Grafik/Favicon
+        -->
+        <link rel="icon" href="favicon.ico" sizes="16x16" type="image/x-icon">
+
+        <!--
+        https://realfavicongenerator.net/
+        -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#ff0000">
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/link#kanonische_Links
+        -->
+        <link rel="canonical" href="https://example.com/content.html">
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/link#Logische_Beziehungen_festlegen
+        -->
+        <link rel="canonical" title="weiterleitung" href="../neue-seite.html">
+        <link rel="contents" title="Inhaltsverzeichnis" href="../../navigation/inhalt.htm">
+        <link rel="index" title="Stichwortverzeichnis" href="../../navigation/stichwort.htm">
+        <link rel="help" title="Hilfe" href="../../editorial/index.htm">
+        <link rel="search" title="Suche" href="../../navigation/suche/index.htm">
+        <link rel="up" title="HTML-Kopfdaten" href="index.htm">
+        <link rel="next" title="Durchsuchbarkeit mit Server-Kommunikation" href="durchsuchbarkeit.htm">
+        <link rel="prev" title="Adressbasis und Zielfensterbasis" href="basis.htm">
+        <link rel="first" title="Titel einer HTML-Datei" href="titel.htm">
+        <link rel="last" title="Durchsuchbarkeit mit Server-Kommunikation" href="durchsuchbarkeit.htm">
+
+        <!--
+        http://www.meta-tags.de/meta_name_robots
+        -->
+        <meta name="robots" content="index,follow">
+
+        <!--
+        https://www.seo-seiten-optimierung.de/geo-icbm-tag.html
+        -->
+        <meta name="ICBM" content="50.8920562, 12.080994" />
+
+        <!--
+        https://www.seo-seiten-optimierung.de/meta-tag-georegion.html
+        -->
+        <meta name="geo.region" content="DE-TH" />
+        <!--
+        https://www.seo-seiten-optimierung.de/meta-tag-geoplacename.html
+        -->
+        <meta name="geo.placename" content="Gera" />
+        <!--
+        https://www.seo-seiten-optimierung.de/meta-tag-geoposition.html
+        -->
+        <meta name="geo.position" content="50.880470;12.081210" />
+
+        <!--
+        https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html
+        -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Title of the page" />
+        <meta name="twitter:description" content="Some description of the page" />
+        <meta name="twitter:image" content="https://picsum.photos/200/300" />
+
+        <!--
+        https://www.promomasters.at/blog/open-graph-meta-tags/
+        -->
+        <meta property="og:title" content="Title of the page" />
+        <meta property="og:description" content="Some description of the page" />
+        <meta property="og:image" content="https://picsum.photos/200/300" />
+        <meta property="og:url" content="https://example.com/" />
+
+        <!--
+        https://schema.org/docs/schemas.html
+        Testing: https://search.google.com/structured-data/testing-tool/u/0/?hl=de
+        -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "image": [
+                "https://example.com/photos/1x1/photo.jpg",
+                "https://example.com/photos/4x3/photo.jpg"
+               ],
+              "@id": "http://davessteakhouse.example.com",
+              "name": "Pat's Crab Shack",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "900 Linton Blvd",
+                "addressLocality": "Delray Beach",
+                "addressRegion": "FL",
+                "postalCode": "33444",
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 40.761293,
+                "longitude": -73.982294
+              },
+              "url": "http://www.example.com/restaurant-locations/manhattan",
+              "telephone": "+12122459600",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday"
+                  ],
+                  "opens": "11:30",
+                  "closes": "22:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ],
+                  "opens": "11:30",
+                  "closes": "23:00"
+                }
+              ]
+            }
+        </script>
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/meta#automatische_Markierung_von_Telefonnummern_steuern
+        -->
+        <meta name="format-detection" content="telephone=no">
+
+        <!--
+        OBSOLETE
+        https://www.w3.org/TR/2011/WD-html-markup-20110113/meta.http-equiv.content-language.html
+        Not needed, since lang is set as html attribute
+        <meta http-equiv="content-language" content="de">
+        -->
+
+        <!--
+        OBSOLETE
+        https://www.lifewire.com/xua-compatible-meta-tag-3469059
+        Not needed, because we don't care.
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        -->
+
+        <!--
+        OBSOLETE
+        https://github.com/mmistakes/minimal-mistakes/issues/1835
+        Were used on Blackberry and Windows Mobile. Both dead!
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="MobileOptimized" content="320">
+        -->
+
+        <!--
+        OBSOLETE
+        https://wiki.selfhtml.org/wiki/HTML/Kopfdaten/meta#Zeichencodierung
+        Not needed, since a HTML doc, should always be content type text/html.
+        <meta http-equiv="content-type" content="text/html">
+        -->
+    </head>
+
+    <body>
+        <header>
+
+            <img src="logo.jpg" alt="Logo">
+
+            <h1>Hauptüberschrift</h1>
+
+            <!--
+            https://wiki.selfhtml.org/wiki/HTML/Tutorials/HTML5/Seitenstrukturierung#nav
+            Die Haupt-Navigation wird durch ein nav-Element umschlossen, das aber auch für Unter-Navigationen verwendet werden kann.
+             -->
+            <nav>
+                <ul>
+                    <li><a href="#link_1.html">Wiki</a></li>
+                    <li><a href="#link_2.html">Blog</a></li>
+                    <li><a href="#link_3.html">Forum</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <!--
+        https://wiki.selfhtml.org/wiki/HTML/Tutorials/HTML5/Seitenstrukturierung#main
+        Das main-Element enthält den (Haupt-)Inhalt einer Webseite. Dieser wurde bisher oft mit <div id="main"> oder <div id="content"> gekennzeichnet.
+
+        WARNING: Da die Internetexplorer 10 und 11 das main-Element nicht kennen, benötigen sie die zusätzliche CSS-Angabe main {display: block;}, um es richtig darzustellen.
+        -->
+        <main style="display: block;">
+
+            <!--
+            https://wiki.selfhtml.org/wiki/HTML/Tutorials/HTML5/Seitenstrukturierung#article_oder_section.3F
+
+            article: ein in sich geschlossener Artikel, der Überschrift (und evtl. einige sections, einen eigenen header und footer) enthält.
+            section: Abschnitte wie ein Kapitel, ein ...
+            -->
+            <article>
+
+                <h2>CSS-basierte Layouts</h2>
+                <h3>HTML-Struktur ohne CSS</h3>
+                <p>
+                    Diese Seite enthält zunächst nur die Struktur und den Inhalt.
+                    Das Aussehen wird erst in folgenden Beispielen über CSS definiert.
+                </p>
+                <p>
+                    Dennoch ist diese Seite schon nutzbar und wird vom Browser
+                    entsprechend dessen Voreinstellungen bereits sinnvoll angezeigt.
+                </p>
+
+            </article>
+
+            <!--
+            https://wiki.selfhtml.org/wiki/HTML/Tutorials/HTML5/Seitenstrukturierung#aside
+            Wichtig ist nur, dass im aside-Block Informationen zum Inhalt der Webseite stehen, die aber nicht Teil des Inhalts der Webseite sind.
+            -->
+            <aside>
+
+                <h2>Weiterführende Links</h2>
+                <ul>
+                    <li><a href="link_1.html">Wiki</a></li>
+                    <li><a href="link_2.html">Blog</a></li>
+                    <li><a href="link_3.html">Forum</a></li>
+                </ul>
+
+            </aside>
+
+        </main>
+
+        <footer>
+            <a href="kontakt.html">Kontakt</a>
+        </footer>
+    </body>
+</html>
